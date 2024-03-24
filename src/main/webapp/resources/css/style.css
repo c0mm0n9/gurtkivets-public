@@ -1,0 +1,285 @@
+body{
+ font-family: Nunito Sans;
+ margin: 0;
+}
+table {
+  border-collapse: collapse;
+
+}
+tr{
+
+  border-bottom: 1px solid #114084;
+
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: black;
+
+}
+select{
+  width: fit-content(50%);
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  margin: 10px;
+}
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+
+}
+input[type="checkbox"]::before {
+  content: "";
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(#000);
+}
+input[type=time] {
+  width: auto;
+}
+
+
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  background-color: white;
+}/*
+tr:hover {background-color: #ddd;}
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}*/
+
+td,th{
+  padding: 8px;
+  font-family: Nunito Sans;
+}
+
+label {
+  padding: 12px;
+  display: inline-block;
+}
+input{
+  width:30%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  margin: 10px;
+  }
+table button{
+background:none;
+color: #114084;
+border:none;
+}
+
+
+  button{
+    border: 1px solid;
+    border-color: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-family: Nunito Sans;
+    line-height: normal;
+    text-decoration-line: none;
+     background: radial-gradient(88856.58% 72.12% at 37.88% 62.5%, #3466AA 0%, #114084 100%);
+
+  }
+  button:hover{
+
+        cursor:pointer;
+        text-decoration-line: underline
+    }
+
+
+  a{
+  color: #000000;
+      text-decoration: underline;
+  }
+  .show {
+    display: block;
+  }
+/* Style the links inside the navigation bar
+.main-menu a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover
+.main-menu a:hover {
+  background-color: #F6F1F1;
+  color: black;
+}
+.main-menu a.active {
+  background-color: #F6F1F1;
+  color: black;
+}
+
+
+.sub-menu {
+  border-bottom: medium solid #146C94;
+  background-color: #F6F1F1;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Style the links inside the navigation bar
+.sub-menu a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.sub-menu p {
+
+  margin-left: 10px;
+
+}
+
+/* Change the color of links on hover
+.sub-menu a:hover {
+  background-color: #146C94;
+  color: #F6F1F1;
+}*/
+
+.container{
+    margin:25px;
+}
+
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/* middle input login */
+
+.centered{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-wrapper{
+  border: 1px solid #000000;
+  border-radius: 4px;
+    background:transparent;
+    color: #000;
+    padding:10px;
+  width:30%;
+}
+
+.input-wrapper h2{
+    font-size:24px;
+    text-align: center;
+}
+
+.input-wrapper .input-box{
+    width:100%;
+    height:50px;
+    margin: 5px;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+.input-wrapper input{
+    width:100%;
+    margin: 10px, 0;
+    padding: 10px;
+}
+.input-wrapper label {
+  margin: 10px, 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.input-wrapper a{
+  margin:0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size:15px;
+  text-decoration:none;
+}
+
+
+.input-wrapper button{
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: inline-block;
+
+}
+
+
+.input-wrapper i{
+    margin:0px;
+}
+
+

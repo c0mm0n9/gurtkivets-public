@@ -1,0 +1,263 @@
+body{
+ font-family: 'Nunito Sans', sans-serif;
+ margin: 0;
+}
+.hide {
+  display: none;
+}
+.carousel-wrapper{
+  height: max-content;
+  width: 100%;
+  display:block;
+  position: relative;
+  margin: 0 auto;
+  overflow: auto;
+
+}
+.carousel-card-wrapper{
+  height: 250px;
+  width: 100%;
+  overflow: auto;
+  float: left;
+  margin: 0 auto;
+
+}
+
+.carousel {
+padding:15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+
+  position: absolute;
+  left: 0;
+  transition: all 1s ease;
+}
+.card {
+  background: none;
+  min-width: 20%;
+  height: 150px;
+    margin:25px;
+  display: inline;
+  justify-content: space-between;
+  padding:15px;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+.card p{
+  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:50%;
+}
+
+
+.section{
+
+padding: 15px 25px;
+
+}
+
+.item{
+  border-radius: 20px;
+  border: 1px solid #808080;
+    background: none;
+    padding:20px;
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+}
+
+.item  a{
+text-decoration:none;
+}
+
+.item h3{
+color: #000;
+background-image:none;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+margin:0px;
+padding:5px;
+}
+.section h3{
+color: #000;
+background-image:none;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+margin:0px;
+padding:5px;
+}
+
+.section button{
+color: #114084;
+font-family: Nunito Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration-line: none;
+background:none;
+border:none;
+padding:15px;
+}
+.section button:hover{
+cursor:pointer;
+text-decoration-line: underline;
+}
+.item h4{
+color: #000;
+background-image:none;
+font-size: 20px;
+font-style: normal;
+font-weight: 200;
+margin:0px;
+}
+.item a{
+
+}
+.section h2{
+color: #000;
+
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+background-image: linear-gradient(to bottom, #114084 50%, transparent 50%);
+background-size: 240px 5px;
+background-repeat:no-repeat;
+background-position: bottom left;
+padding:0px;
+margin-top:0px;
+margin-bottom:15px;
+}
+.section-header{
+display:flex;
+justify-content:space-between;
+text-align:center;
+align-items:center;
+padding:0px;
+}
+
+.section-header a{
+color: #114084;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+}
+
+.main-table{
+border-radius: 30px;
+border: 1px solid #000;
+height-max: 700px;
+width:100%;
+overflow:auto;
+padding-top:10px;
+padding-left:20px;
+padding-bottom:10px;
+}
+.main-table th{
+text-align:left;
+background-image: linear-gradient(to bottom, #114084 50%, transparent 50%);
+background-size: 50px 3px;
+background-repeat:no-repeat;
+background-position: bottom left;
+color: #000;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.main-table tr{
+
+color: #000;
+font-family: Nunito Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+padding-top:20px;
+}
+
+.main-table button{
+color: #114084;
+font-family: Nunito Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-decoration-line: none;
+background:none;
+border:none;
+padding:0px;
+}
+.main-table button:hover{
+cursor:pointer;
+text-decoration-line: underline;
+}
+
+.background-gradient-1{
+display:flex;
+align-items:end;
+justify-content: space-between;
+
+  z-index:0;
+  overflow:hidden;
+   width:100%;
+}
+.foreground-gradient{
+
+background-image:
+url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="832" height="242" viewBox="0 0 832 242" fill="none"><g filter="url(%23filter0_f_8_1309)"><path d="M-213.218 375.379C-272.619 494.013 -50.087 583.471 171.719 724.298C327.32 823.091 622.11 686.196 656.346 659.593C711.149 615.216 664.219 650.145 711.149 615.216C769.812 571.553 688.816 484.212 623.196 358.569C557.576 232.925 139.771 155.881 19.5172 108.224C-100.737 60.5674 -153.817 256.744 -213.218 375.379Z" fill="%2382B7DC"/></g><defs><filter id="filter0_f_8_1309" x="-322.965" y="0.905121" width="1154.36" height="858.735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_8_1309"/></filter></defs></svg>')
+,
+url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1215" height="500" viewBox="0 0 1215 500" fill="none"><g filter="url(%23filter0_f_8_1308)"><path d="M1691.15 307.187C1782.07 94.6371 1442.77 -5.23298 1104.69 -191.489C867.531 -322.152 417.41 -25.7612 365.108 26.6277C281.381 113.499 353.072 44.2645 281.381 113.499C191.766 200.042 315.128 328.341 414.935 524.406C514.742 720.471 1152.02 755.378 1335.38 808.196C1518.74 861.015 1600.22 519.738 1691.15 307.187Z" fill="url(%23paint0_angular_8_1308)"/></g><defs><filter id="filter0_f_8_1308" x="0.385742" y="-474.456" width="1955.73" height="1538.13" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_8_1308"/></filter><radialGradient id="paint0_angular_8_1308" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(857.75 226.25) rotate(-26.9382) scale(326.137 754.86)"><stop offset="0.479885" stop-color="%2382B7DC"/><stop offset="0.989011" stop-color="%233466AA"/></radialGradient></defs></svg>')
+
+;
+  background-repeat: no-repeat;
+    background-size: auto;
+    background-blend-mode: color-dodge;
+    background-position: left bottom, right bottom;
+
+  z-index:1;
+  width:100%;
+}
+
+.block{
+
+position:relative;
+  width:100%;
+
+ overflow:hidden;
+
+}
+
+.block h1{
+
+color: #000;
+font-family: 'Nunito Sans', sans-serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-bottom:-30px;
+}
+.block p{
+width:70%;
+color: #000;
+font-family: Nunito Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.left-centered{
+
+height:fit-content;
+width:100%;
+    display:flex;
+  align-items: center;
+ justify-content: center;
+}
