@@ -1,43 +1,54 @@
 # Gurtkivets
-Система управління закладами позашкільної освіти, розроблена на Java (Spring), MySql, HTML, CSS, JavaScript
+A management system for extracurricular education institutions, developed in Java (Spring), MySQL, HTML, CSS, JavaScript.
 
-## Для запуску
+## To run with Maven:
 
-Встановіть JDK 17 та JRE 8
+1. **Install JDK 17 and Maven:**
+   - Install JDK 17 from [Oracle's website](https://www.oracle.com/cis/java/technologies/downloads/#java17).
+   - Install Maven from [here](https://maven.apache.org/download.cgi).
 
-```
-https://www.oracle.com/cis/java/technologies/downloads/#java17
-```
+2. **Install and Set Up MySQL:**
+   - Install MySQL from [MySQL's official website](https://dev.mysql.com/downloads/).
+   - Create a database named `gurtkivets`:
+     ```sql
+     CREATE DATABASE gurtkivets;
+     ```
 
-```
-https://www.java.com/ru/download/manual.jsp
-```
+3. **Clone the Repository:**
+   - Clone the repository to your local machine:
+     ```bash
+     git clone https://github.com/c0mm0n9/gurtkivets-public/
+     ```
 
-Встановіть MYSQL та створіть БД
-```
-https://dev.mysql.com/downloads/
-```
+4. **Navigate to Project Directory:**
+   - Open a terminal and navigate to the project directory:
+     ```bash
+     cd gurtkivets-public
+     ```
 
-```
-CREATE DATABASE gurtkivets;
-```
+5. **Restore the Database:**
+   - Navigate to the `database` directory in the project.
+   - Restore the database using the dump.sql file:
+     ```bash
+     mysql -u <username> -p gurtkivets < dump.sql
+     ```
+   Replace `<username>` with your MySQL username.
 
-Відновіть БД за допомогою файлу dump.sql
-```
-use gurtkivets;
-source dump.sql;
-```
+6. **Run the Project:**
+   - Build the project using Maven:
+     ```bash
+     mvn clean install
+     ```
+   - Run the project using the Maven Spring Boot plugin:
+     ```bash
+     mvn spring-boot:run
+     ```
 
-Відкрийте проект за допомогою Inteliji IDE
-```
-https://www.jetbrains.com/idea/
-```
+7. **Access the Application:**
+   - Once the application is running, open your web browser.
+   - Navigate to the following address:
+     ```
+     http://localhost:8080/
+     ```
 
-Запустіть проект та перейтіть на адресу в браузері:
-
-```
-http://localhost:8080/
-```
-
-Готово!
-
+Now you're all set to use Gurtkivets!
